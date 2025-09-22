@@ -1,0 +1,30 @@
+/* src /styles/global.css*/
+
+@tailwind base;
+@tailwind compinents;
+@tailwind utilities;
+
+/*Set light mode*/
+body {
+    --color-primary:#007bff;
+    --color-secondary:#555;
+    --color-text-primary:#1a202c;
+    --color-text-secondary : #2d3748;
+    --color-background:#ffffff;
+    --color-card-background:#fff;
+    --color-border:#e2e8f0;
+
+    font-family:var(--font-family-sans);
+    font-size:var(--font-size-base);
+    line-height:var(--color-background);
+    color:var(--color-text-primary);
+    transition:background-color 0.3s ese , color 0.3s ease;
+
+}
+
+.main-container {
+    min-height:100vh;
+    position:relative;
+    overflow:hidden;
+    color:white;
+}
