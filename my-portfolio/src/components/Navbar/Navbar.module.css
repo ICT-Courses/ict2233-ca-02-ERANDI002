@@ -1,0 +1,30 @@
+/*Navbar.module.css*/
+.navbar {
+    position : fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:50;
+}
+
+.logo a {
+    font: size 1.5rem;
+    font-weight:bold;
+    color:var(--color-textt-dark);
+}
+
+.navLinks {
+    list-style:none;
+    display:flex;
+    gap:1.5rem;
+
+}
+
+.navLinks a {
+    color:var (--color-text-dark);
+    transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+    color:var (--color-primary);
+}
