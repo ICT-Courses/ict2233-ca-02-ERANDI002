@@ -5,26 +5,105 @@
     left:0;
     width:100%;
     z-index:50;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: var(--color-background);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo a {
     font: size 1.5rem;
     font-weight:bold;
-    color:var(--color-textt-dark);
+   color:#6c0c84;
 }
 
 .navLinks {
     list-style:none;
     display:flex;
+    margin: 0 auto; 
     gap:1.5rem;
 
 }
 
 .navLinks a {
-    color:var (--color-text-dark);
+     color:#6c0c84;
     transition: color 0.3s ease;
 }
 
 .navLinks a:hover {
     color:var (--color-primary);
 }
+
+
+
+.menu-toggle {
+    display:none;
+    background: none;
+    border: none;
+    cursor:pointer;
+    
+}
+
+.dark-mode-toggle {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--color-text-dark);
+}
+
+.navLinks.active {
+  display: flex;
+}
+
+/*Responsive Adjustments*/
+
+@media (max-width: 768px) {
+  .navLinks {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-background);
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: none; 
+    margin: 0; 
+  }
+  
+  .menu-toggle {
+    display: block; 
+  }
+}
+
+:root {
+  
+  --color-background: #f0f2f5;
+  --color-text-dark: #1f2937;
+  --color-primary: #1d4ed8;
+  --color-card-background: #ffffff;
+}
+
+body.dark-mode {
+  --color-background: #1f2937;
+  --color-text-dark: #f0f2f5;
+  --color-primary: #3b82f6;
+  --color-card-background: #374151;
+}
+
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-dark);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.card {
+  background-color: var(--color-card-background);
+  color: var(--color-text-dark);
+}
+

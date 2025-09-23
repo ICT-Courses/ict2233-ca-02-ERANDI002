@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
-// Now accepts isDarkMode and toggleDarkMode as props
+// DarkMode and toggleDarkMode as props
 const Navbar = ({ isDarkMode, toggleDarkMode }) => {
-  // State for the mobile menu's visibility remains here
+  // State for the mobile menu's visibility remains 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -34,7 +34,7 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
         <li><a href="#contact">Contact</a></li>
       </ul>
 
-      {/* The toggle now uses the prop function */}
+      {/* The toggle git pushprop function */}
       <div onClick={toggleDarkMode} className={styles['dark-mode-toggle']}>
         {isDarkMode ? '🌙' : '☀️'}
       </div>
