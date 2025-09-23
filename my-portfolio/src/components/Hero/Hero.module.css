@@ -34,3 +34,16 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .heroSection {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    gap: 4rem;
+  }
+  
+  .heroContent {
+    align-items: flex-start;
+  }
+}
