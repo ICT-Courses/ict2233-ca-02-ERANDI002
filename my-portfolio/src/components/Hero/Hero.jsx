@@ -54,7 +54,7 @@ const Hero =() => {
 
            {/*Texts  */}
            <div className="text-left md:text-left ml-24">
-            <h1 className="text-4xl md:6xl font-bold mb-2 text-purpule-400">
+            <h1 className="text-4xl md:6xl font-bold mb-2 text-purpule-400 dark:text-white">
                 Hi, I'm <span className="text-purpule-400 mb-4">
                     </span>
                     </h1>
@@ -64,7 +64,7 @@ const Hero =() => {
             <h2 className= "text-4xl md:text-6xl font-bold text-purpule-400 mb-4">
                 <TypeAnimation 
                     sequence={[
-                        'Erandi Wathasala',
+                        'Erandi Wickramaarachchi',
                         2000,
                          'Web Developer' ,
                         2000,
@@ -76,7 +76,7 @@ const Hero =() => {
                        />
              </h2>        
            
-              <p className="text-lg text-purple-500 max-w-xl mb-8 font-bold text-center md:text-left">
+              <p className="text-lg text-purple-500 max-w-xl mb-8 font-bold text-center md:text-left dark:text-white">
                 I am an undergraduate at the University of Sri Jayewardenepura, 
                 specializing in Information Technology and passionate about developing innovative software solutions.
               </p>
@@ -84,7 +84,7 @@ const Hero =() => {
               {/*CV & Contact*/}
 
               <div className ="flex gap-10 mt-8 justify-center ">
-                <a href= "werandiwathsala@gmail.com" className="px-6 py-3 font-bold border-4 border-purple-600 text-purple-600 rounded-full hover:bg-white/10 ease-in duration-200 flex justify-center items-center">
+                <a href= "werandiwathsala@gmail.com" className="px-6 py-3 font-bold border-4 border-purple-600 text-purple-600 rounded-full hover:bg-white/10 ease-in duration-200 flex justify-center items-center dark:text-white">
                    Contact Me
                    </a>
                     
