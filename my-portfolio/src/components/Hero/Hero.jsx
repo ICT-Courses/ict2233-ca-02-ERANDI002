@@ -62,11 +62,27 @@ const Hero =() => {
                        />
              </h2>        
            
-        
-        
-        
-        
-        
+              <p className= "text-lg text-gray-200 max-w-xl mb-8">
+                I am an undergraduate at the University of Sri Jayewardenepura, 
+                specializing in Information Technology and passionate about developing innovative software solutions.
+              </p>
+
+              {/*CV & Contact*/}
+
+              <div className ="flex gap-10 mt-8 justify-center md:justify-end">
+                <a href= "werandiwathsala@gmail.com" className="px-6 py-3 border border-white text-white rounded-full hover:bg-white/10 ease-in duration-200 flex justify-center items-center">
+                   Contact Me
+                   </a>
+                    
+              <a href="/erandi-cv.pdf" download="Erandi_Wathsala_CV.pdf" className="px-6 py-3 bg-purple-600 text-white rounded-full hover:bg-purple-700 ease-in duration-200 flex justify-center items-center">
+                            <span className="flex items-center gap-2">
+                                <FaDownload /> Download CV
+                            </span>
+                        </a>
+
+
+                
+              </div>
         
         </div>
         </div>
@@ -75,3 +91,5 @@ const Hero =() => {
 
     );
 }
+
+export default Hero;
