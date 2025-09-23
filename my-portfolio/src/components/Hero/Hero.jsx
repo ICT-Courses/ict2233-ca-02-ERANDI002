@@ -36,7 +36,31 @@ const Hero =() => {
            alt="Profile"
            className="object-cover w-full h-full"
            ></img> 
-           </div>  
+           </div> 
+
+           {/*Texts  */}
+           <div className="text-left md:text-left ml-24">
+            <h1 className="text-4xl md:6xl font-bold mb-2">
+                Hi, I'm <span className="text-purpule-400 mb-4">
+                    </span>
+                    </h1>
+                    </div> 
+
+            {/*Type Animation for the dynamic text*/}
+            <h2 className= "text-4xl md:text-6xl font-bold text-purpule-400 mb-4">
+                <TypeAnimation 
+                    sequence={[
+                        'Erandi Wathasala',
+                        2000,
+                         'Web Developer' ,
+                        2000,
+                          'UI/UX Designer',
+                         2000, 
+                    ]}
+                    wrapper="span"
+                    repeat={Infinity} 
+                       />
+             </h2>        
            
         
         
