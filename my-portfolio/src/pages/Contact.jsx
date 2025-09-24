@@ -85,13 +85,13 @@ const Contact = () => {
         <div className="mt-12 text-center">
           <h2 className="text-2xl font-bold mb-4 text-white">Find me on:</h2>
           <div className="flex justify-center space-x-6">
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition duration-300 text-3xl">
+            <a href=" https://www.linkedin.com/in/erandi-wickramaarachchi-6393b5312/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition duration-300 text-3xl">
               <FaLinkedin />
             </a>
-            <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition duration-300 text-3xl">
+            <a href="https://github.com/ERANDI002" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition duration-300 text-3xl">
               <FaGithub />
             </a>
-            <a href="mailto:youremail@example.com" className="text-gray-400 hover:text-purple-400 transition duration-300 text-3xl">
+            <a href="mailto:werandiwathsala@gmail.com" className="text-gray-400 hover:text-purple-400 transition duration-300 text-3xl">
               <FaEnvelope />
             </a>
           </div>

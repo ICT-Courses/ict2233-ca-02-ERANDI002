@@ -90,7 +90,7 @@ const Hero = () => {
                          <p className=" text-lg text-purple-500 max-w-xl mb-8 font-bold text-center md:text-left
                           transition-colors duration-500 dark:text-white">
                              I am an undergraduate at the University of Sri Jayewardenepura, 
-                specializing in Information Technology and passionate about developing innovative software solutions.
+                             specializing in Information Technology and passionate about developing innovative software solutions.
                         </p>
                         <div className="flex gap-10 mt-8 justify-center ">
                             <a href= "#contact" className="px-6 py-3 font-bold border-4 border-purple-600 
