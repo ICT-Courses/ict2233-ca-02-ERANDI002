@@ -66,10 +66,9 @@ const Hero = () => {
                                 <FaInstagram size={20} className="text-purple-600" />
                             </a>
                         </div>
-                         <h1 className="text-4xl md:text-6xl font-bold mb-2 text-purple-900 dark:text-white flex  transform transition duration-300 hover:scale-105">
+                         <h1 className="text-4xl md:text-6xl font-bold mb-2 text-purple-900 flex  transform transition duration-300 hover:scale-105 dark:text-white">
                             Hi, I'm <span className="text-purple-400"></span>
                         </h1>
-
 
 
 
