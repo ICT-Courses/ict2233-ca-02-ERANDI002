@@ -4,7 +4,8 @@ import React from 'react';
 import Hero from '../components/Hero/Hero.jsx';
 import About from'../pages/About.jsx';
 import Project from '../pages/Projects.jsx';
-import Contact from '../pages/Skills.jsx';
+import Contact from '../pages/Contact.jsx';
+import Skills from '../pages/Skills.jsx';
 
 
 const MainPorfolio = () => {
