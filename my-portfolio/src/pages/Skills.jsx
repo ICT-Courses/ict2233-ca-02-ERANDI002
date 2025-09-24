@@ -23,3 +23,70 @@ const skills = {
         { name: 'Figma', icon: <SiFigma size={30} className="text-purple-400" />, description: 'Design & prototyping' }
     ]
 };
+
+
+const Skills = () => {
+    return (
+    
+            <div id= "#skills" className="container mx-auto px-4 py-16 "
+    >
+                <div className="text-center mb-12">
+                    <h2 className="text-4xl font-bold mb-2">Skills & Technologies</h2>
+                    <p className="text-gray-400">Here are the technologies and tools I work with to bring ideas to life.</p>
+                </div>
+
+                <div className="grid md:grid-cols-3 gap-8">
+                    {/* Frontend Skills */}
+                    <div className="bg-gray-800 rounded-lg p-6 shadow-lg flex flex-col transform transition duration-300 hover:scale-105">
+                        <h3 className="text-2xl font-semibold mb-4 text-pink-500">Frontend</h3>
+                        <div className="space-y-4">
+                            {skills.frontend.map((skill, index) => (
+                                <div key={index} className="flex items-center gap-4 p-3 bg-gray-700 rounded-md text-white">
+                                    {skill.icon}
+                                    <div>
+                                        <p className="font-medium text-lg">{skill.name}</p>
+                                        <p className="text-sm text-gray-400">{skill.description}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Backend Skills */}
+                    <div className="bg-gray-800 rounded-lg p-6 shadow-lg flex flex-col transform transition duration-300 hover:scale-105">
+                        <h3 className="text-2xl font-semibold mb-4 text-blue-500">Backend</h3>
+                        <div className="space-y-4">
+                            {skills.backend.map((skill, index) => (
+                                <div key={index} className="flex items-center gap-4 p-3 bg-gray-700 rounded-md text-white">
+                                    {skill.icon}
+                                    <div>
+                                        <p className="font-medium text-lg">{skill.name}</p>
+                                        <p className="text-sm text-gray-400">{skill.description}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Databases & Tools */}
+                    <div className="bg-gray-800 rounded-lg p-6 shadow-lg flex flex-col transform transition duration-300 hover:scale-105">
+                        <h3 className="text-2xl font-semibold mb-4 text-yellow-500">Databases & Tools</h3>
+                        <div className="space-y-4">
+                            {skills.databases.map((skill, index) => (
+                                <div key={index} className="flex items-center gap-4 p-3 bg-gray-700 rounded-md text-white">
+                                    {skill.icon}
+                                    <div>
+                                        <p className="font-medium text-lg">{skill.name}</p>
+                                        <p className="text-sm text-gray-400">{skill.description}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    );
+};
+
+export default Skills;
