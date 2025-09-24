@@ -10,9 +10,9 @@ const About = () => {
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-16 text-purple-500 ">About Me</h1>
 
-        <div className="md:flex md:space-x-16 md:gap-16"></div>
+        <div className="md:flex md:space-x-16 md:gap-16">
 
-        <section className="mb-12 md:w-1/2 p-6 rounded-xl border border-gray-700 shadow-lg relative overflow-hidden">
+       <section className="mb-12 md:w-1/2 p-6 rounded-xl border border-gray-700 shadow-lg relative overflow-hidden flex flex-col transform transition duration-300 hover:scale-105">
             <h2 className="text-3xl font-semibold mb-4 border-b-2 border-teal-400 pb-2 inline-block">
               About Me
             </h2>
@@ -32,7 +32,7 @@ const About = () => {
           </section>
                 {/* Education Section */}
 
-          <section className="mb-12 md:w-1/2 p-6 rounded-xl border border-gray-700 shadow-lg relative overflow-hidden">
+          <section className="mb-12 md:w-1/2 p-6 rounded-xl border border-gray-700 shadow-lg relative overflow-hidden flex flex-col transform transition duration-300 hover:scale-105">
             <h2 className="text-3xl font-semibold mb-4 border-b-2 border-teal-400 pb-2 inline-block">
               Education
             </h2>
@@ -53,6 +53,7 @@ const About = () => {
               </li>
             </ul>
           </section>
+          </div>
         </div>
       </div>
     
