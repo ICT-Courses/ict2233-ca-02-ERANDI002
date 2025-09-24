@@ -21,7 +21,9 @@ body {
     transition:background-color 0.3s ese , color 0.3s ease;
 
 }
-
+.main-content-area {
+  margin-top: 90px;
+}
 .main-container {
     min-height:100vh;
     position:relative;

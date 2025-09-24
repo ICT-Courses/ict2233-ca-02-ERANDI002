@@ -92,7 +92,7 @@ const Hero = () => {
                              specializing in Information Technology and passionate about developing innovative software solutions.
                         </p>
                         <div className="flex gap-10 mt-8 justify-center ">
-                            <a href= "#contact" className="px-6 py-3 font-bold border-4 border-purple-600 
+                            <a href= "/contact" className="px-6 py-3 font-bold border-4 border-purple-600 
                             text-purple-600 rounded-full hover:bg-white/10 ease-in duration-200 flex justify-center 
                             items-center dark:text-white flex transform transition duration-300 hover:scale-105">
                                 Contact Me
@@ -113,5 +113,3 @@ const Hero = () => {
 };
 
 export default Hero;
-                        
-                       

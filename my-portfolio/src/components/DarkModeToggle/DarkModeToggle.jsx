@@ -1,27 +1,11 @@
-/ src/components/DarkModeToggle/DarkModeToggle.jsx
-import React, { useState, useEffect } from 'react';
+// src/components/DarkModeToggle.jsx
 
-const DarkModeToggle = () => {
-    const [isDarkMode, setIsDarkMode] = useState(
-        window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-    );
-   
-     useEffect(() => {
-        const body = document.body;
-        if (isDarkMode) {
-            body.classList.add('dark');
-        } else {
-            body.classList.remove('dark');
-        }
-    }, [isDarkMode]);
+import React from 'react';
 
-    const handleToggle = () => {
-        setIsDarkMode(!isDarkMode);
-    };
-
+const DarkModeToggle = ({ isDarkMode, toggleDarkMode }) => {
     return (
         <button
-            onClick={handleToggle}
+            onClick={toggleDarkMode}
             className="p-2 rounded-full transition-colors duration-300"
         >
             {isDarkMode ? (

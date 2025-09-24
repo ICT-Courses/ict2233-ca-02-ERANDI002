@@ -53,7 +53,7 @@ const Projects = () => {
 
     return (
         <div id="projects" className={styles.projectsPage}>
-            <h1 className="text-4xl md:text-5xl font-bold text-center mb-8 dark:text-purple-300 ">My Projects</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 dark:text-purple-300 pt-24 ">My Projects</h1>
 
             {isLoading && <p className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4text-center text-white text-lg dark:text-purple-300">Loading repositories...</p>}
             {error && <p className="text-center text-red-500 text-lg dark:text-purple-300">Error: {error}</p>}

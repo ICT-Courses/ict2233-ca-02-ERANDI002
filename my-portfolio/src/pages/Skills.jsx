@@ -31,7 +31,7 @@ const Skills = () => {
             <div id= "#skills" className="container mx-auto px-4 py-16 "
     >
                 <div className="text-center mb-12">
-                    <h2 className="text-4xl font-bold mb-2">Skills & Technologies</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 dark:text-purple-300 pt-24 ">Skills & Technologies</h2>
                     <p className="text-gray-400">Here are the technologies and tools I work with to bring ideas to life.</p>
                 </div>
 

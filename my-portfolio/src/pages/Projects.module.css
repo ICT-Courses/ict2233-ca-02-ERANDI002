@@ -3,6 +3,7 @@
 .projects {
   padding: 4rem 1rem;
   background-color: #f0f0f0; /* Use a light background for contrast */
+  padding-bottom: 40px ;
 }
 
 .sectionTitle {
