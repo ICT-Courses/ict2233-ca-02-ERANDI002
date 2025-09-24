@@ -29,3 +29,15 @@ body {
     color:white;
 }
 
+/* Dark mode styles are now scoped to the body.dark selector */
+body.dark {
+    --color-primary: #8ab4f8; /* A light blue for links and accents */
+    --color-secondary: #9aa0a6;
+    --color-text-primary: #e8eaed;
+    --color-text-secondary: #9aa0a6;
+    --color-background: #121212;
+    --color-card-background: #1e1e1e;
+    --color-border: #3c3c3c;
+}
+
+

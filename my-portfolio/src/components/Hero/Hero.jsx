@@ -54,7 +54,7 @@ const Hero =() => {
 
            {/*Texts  */}
            <div className="text-left md:text-left ml-24">
-            <h1 className="text-4xl md:6xl font-bold mb-2 text-purpule-400 dark:text-white flex transform transition duration-300 hover:scale-105">
+            <h1 className="text-4xl md:6xl font-bold mb-2 text-purpule-400 dark:text-white">
                 Hi, I'm <span className="text-purpule-400 mb-4">
                     </span>
                     </h1>
