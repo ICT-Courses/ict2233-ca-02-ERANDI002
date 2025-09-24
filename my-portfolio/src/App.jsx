@@ -20,6 +20,7 @@ const App =() => {
       <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       <Routes>
         <Route path="/" element={<MainPortfolio isDarkMode={isDarkMode} />} />
+        <Route path="*" element ={<NotFound/>} />
       </Routes>
       <Footer />
     </>
