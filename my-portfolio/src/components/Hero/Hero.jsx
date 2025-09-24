@@ -45,7 +45,7 @@ const Hero = () => {
                         <img
                             src="/erandi.png"
                             alt="Profile"
-                            className="object-cover w-full h-full"
+                            className="object-contain w-full h-full"
                         />
                     </div>
                     
