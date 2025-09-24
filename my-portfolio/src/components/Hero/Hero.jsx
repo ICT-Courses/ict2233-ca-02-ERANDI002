@@ -66,13 +66,53 @@ const Hero = () => {
                                 <FaInstagram size={20} className="text-purple-600" />
                             </a>
                         </div>
-                        
-                        </div>
-                        </div>
-                        </div>
+                         <h1 className="text-4xl md:text-6xl font-bold mb-2 text-purple-900 dark:text-white flex  transform transition duration-300 hover:scale-105">
+                            Hi, I'm <span className="text-purple-400"></span>
+                        </h1>
 
-                        </div>
 
+
+
+                        <h2 className="text-4xl md:text-6xl font-bold text-purple-400 mb-4 flex transform transition duration-300 hover:scale-105">
+                         <TypeAnimation
+                                sequence={[
+                                    'Erandi Wickramarachchi',
+                                    2000,
+                                    'UI/UX Designer',
+                                    2000,
+                                    'Web Developer',
+                                    2000,
+                                ]}
+                                wrapper="span"
+                                repeat={Infinity}
+                            />
+                        </h2>
+                         <p className=" text-lg text-purple-500 max-w-xl mb-8 font-bold text-center md:text-left
+                          transition-colors duration-500 dark:text-white">
+                             I am an undergraduate at the University of Sri Jayewardenepura, 
+                specializing in Information Technology and passionate about developing innovative software solutions.
+                        </p>
+                        <div className="flex gap-10 mt-8 justify-center ">
+                            <a href= "#contact" className="px-6 py-3 font-bold border-4 border-purple-600 
+                            text-purple-600 rounded-full hover:bg-white/10 ease-in duration-200 flex justify-center 
+                            items-center dark:text-white flex transform transition duration-300 hover:scale-105">
+                                Contact Me
+                            </a>
+                            <a href="/erandi-cv.pdf" download="Erandi_wickramaarachchi_CV.pdf" className="px-6 py-3 bg-purple-600 
+                            text-white rounded-full hover:bg-purple-700 ease-in duration-200 flex justify-center 
+                            items-center flex transform transition duration-300 hover:scale-105">
+                                <span className="flex items-center gap-2">
+                                    <FaDownload /> Download CV
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 };
 
+export default Hero;
+                        
+                       
