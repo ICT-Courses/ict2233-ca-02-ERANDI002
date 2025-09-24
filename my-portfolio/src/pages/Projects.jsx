@@ -49,8 +49,38 @@ const Projects = () => {
                 return '/project-placeholder.png'; 
         }
     };
+      
+
+    return (
+        <div id="projects" className={styles.projectsPage}>
+            <h1 className="text-4xl md:text-5xl font-bold text-center mb-8 dark:text-purple-300 ">My Projects</h1>
+
+            {isLoading && <p className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4text-center text-white text-lg dark:text-purple-300">Loading repositories...</p>}
+            {error && <p className="text-center text-red-500 text-lg dark:text-purple-300">Error: {error}</p>}
+
+            {!isLoading && !error && (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4 ">
+                    {repos.map((repo) => (
+                        <ProjectCard 
+                            key={repo.id} 
+                            project={{
+                                title: repo.name,
+                                description: repo.description || 'No description provided.',
+                                githubUrl: repo.html_url,
+                                image: getProjectImage(repo.name), 
+                                liveDemoUrl: repo.homepage,
+                            }} 
+                            buttonColor="bg-purple-300 hover:bg-purple-400"
+                        />
+                    ))}
+                </div>
+            )}
+        </div>
+    );
+};
+
+export default Projects;
+
+
     
-
-
-    }
 
