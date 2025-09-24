@@ -54,14 +54,14 @@ const Hero =() => {
 
            {/*Texts  */}
            <div className="text-left md:text-left ml-24">
-            <h1 className="text-4xl md:6xl font-bold mb-2 text-purpule-400 dark:text-white">
+            <h1 className="text-4xl md:6xl font-bold mb-2 text-purpule-400 dark:text-white flex transform transition duration-300 hover:scale-105">
                 Hi, I'm <span className="text-purpule-400 mb-4">
                     </span>
                     </h1>
                     </div> 
 
             {/*Type Animation for the dynamic text*/}
-            <h2 className= "text-4xl md:text-6xl font-bold text-purpule-400 mb-4">
+            <h2 className= "text-4xl md:text-6xl font-bold text-purpule-400 mb-4 flex transform transition duration-300 hover:scale-105">
                 <TypeAnimation 
                     sequence={[
                         'Erandi Wickramaarachchi',
@@ -84,11 +84,11 @@ const Hero =() => {
               {/*CV & Contact*/}
 
               <div className ="flex gap-10 mt-8 justify-center ">
-                <a href= "werandiwathsala@gmail.com" className="px-6 py-3 font-bold border-4 border-purple-600 text-purple-600 rounded-full hover:bg-white/10 ease-in duration-200 flex justify-center items-center dark:text-white">
+                <a href= "#contact" className="px-6 py-3 font-bold border-4 border-purple-600 text-purple-600 rounded-full hover:bg-white/10 ease-in duration-200 flex justify-center items-center dark:text-white flex transform transition duration-300 hover:scale-105">
                    Contact Me
                    </a>
                     
-              <a href="/erandi-cv.pdf" download="Erandi_Wathsala_CV.pdf" className="px-6 py-3 bg-purple-600 text-white rounded-full hover:bg-purple-700 ease-in duration-200 flex justify-center items-center">
+              <a href="/erandi-cv.pdf" download="Erandi_Wathsala_CV.pdf" className="px-6 py-3 bg-purple-600 text-white rounded-full hover:bg-purple-700 ease-in duration-200 flex justify-center items-center flex transform transition duration-300 hover:scale-105">
                             <span className="flex items-center gap-2">
                                 <FaDownload /> Download CV
                             </span>

@@ -26,13 +26,12 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
 
       {/* Navigation links */}
       <ul className={`${styles.navLinks} ${isMenuOpen ? styles.active : ''}`}>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <li><a href="/#home" className="flex transform transition duration-300 hover:scale-105">Home</a></li>
+  <li><a href="/#about" className="flex transform transition duration-300 hover:scale-105">About</a></li>
+  <li><a href="/#skills" className="flex transform transition duration-300 hover:scale-105">Skills</a></li>
+  <li><a href="/#projects" className="flex transform transition duration-300 hover:scale-105">Projects</a></li>
+  <li><a href="/#contact" className="flex transform transition duration-300 hover:scale-105">Contact</a></li>
+</ul>
 
       {/* The toggle git pushprop function */}
       <div onClick={toggleDarkMode} className={styles['dark-mode-toggle']}>
