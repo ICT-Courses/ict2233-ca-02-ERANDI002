@@ -26,5 +26,7 @@ const MainPorfolio = () => {
                 <Contact/>
             </section>
         </div>
-    )
-}
+    );
+};
+
+export default MainPortfolio;

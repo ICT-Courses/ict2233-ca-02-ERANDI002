@@ -28,7 +28,7 @@ const Hero =() => {
         </div>
 
         {/* Profile Picture */}
-                    <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-purple-600 shadow-lg mb-8 md:mb-0">
+                    <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-purple-600 shadow-lg mb-8 md:mb-0 flex transform transition duration-300 hover:scale-105">
                         <img
                             src="/erandi.png"
                             alt="Profile"
@@ -54,7 +54,7 @@ const Hero =() => {
 
            {/*Texts  */}
            <div className="text-left md:text-left ml-24">
-            <h1 className="text-4xl md:6xl font-bold mb-2 text-purpule-400 dark:text-white">
+            <h1 className="text-4xl md:6xl font-bold mb-2 text-purpule-400 dark:text-white flex  transform transition duration-300 hover:scale-105">
                 Hi, I'm <span className="text-purpule-400 mb-4">
                     </span>
                     </h1>
