@@ -11,6 +11,9 @@ const Projects = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
 
+    // useEffect hook to asynchronously fetch GitHub repositories on component mount
+    // Handles loading state, successful data retrieval, and errors
+
     useEffect(() => {
         const fetchRepos = async () => {
             try {
@@ -31,5 +34,23 @@ const Projects = () => {
             }
         };
 
+         fetchRepos();
+    }, []);
 
-}
+     const getProjectImage = (repoName) => {
+        switch (repoName) {
+            case 'BMI-Calculator':
+                return '/project-placeholder.png'; 
+            case 'Flower_Bouquet_Website-':
+                return '/flower.png'; 
+            case 'student-clubs-app': 
+                return '/student-club.png'; 
+            default:
+                return '/project-placeholder.png'; 
+        }
+    };
+    
+
+
+    }
+
